@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-UnitedPharamcy/Pods-UnitedPharamcy-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CHIPageControl/CHIPageControl.framework
+${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework
+${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework

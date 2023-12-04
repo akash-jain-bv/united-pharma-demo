@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addressCell" id="KGk-i7-Jjw" customClass="CustomAddressCell" customModule="UnitedPharamcy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-1F-F8j">
+                        <rect key="frame" x="0.0" y="5" width="320" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unselectRB_ic" translatesAutoresizingMaskIntoConstraints="NO" id="yGA-bd-b5S">
+                                <rect key="frame" x="20" y="10" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="kUd-HO-8Iy"/>
+                                    <constraint firstAttribute="height" constant="15" id="uhB-sV-h6j"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sm-di-xBm">
+                                <rect key="frame" x="225" y="5" width="30" height="30"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.69411764710000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="editClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9le-47-Y8p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-sV-DZm">
+                                <rect key="frame" x="265" y="5" width="45" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.69411764710000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="editClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EvM-YD-xLH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-3q-rYJ">
+                                <rect key="frame" x="45" y="35" width="270" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hesham Mohamed Haael Street Al-Rowais, Jeddah, 21441 Saudi Arabia T:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="0546536051">
+                                        <attributes>
+                                            <color key="NSColor" red="0.011764705882352941" green="0.13725490196078433" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack Doy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbq-JD-CIC">
+                                <rect key="frame" x="45" y="10" width="128" height="20"/>
+                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qo8-sV-DZm" firstAttribute="leading" secondItem="4Sm-di-xBm" secondAttribute="trailing" constant="10" id="EyB-ew-M4V"/>
+                            <constraint firstItem="4Zo-3q-rYJ" firstAttribute="leading" secondItem="dbq-JD-CIC" secondAttribute="leading" id="IMg-0q-zoU"/>
+                            <constraint firstItem="yGA-bd-b5S" firstAttribute="top" secondItem="OCx-1F-F8j" secondAttribute="top" constant="10" id="P7N-3j-Osk"/>
+                            <constraint firstItem="Qo8-sV-DZm" firstAttribute="height" secondItem="dbq-JD-CIC" secondAttribute="height" multiplier="1.5" id="SXA-Gx-238"/>
+                            <constraint firstItem="dbq-JD-CIC" firstAttribute="top" secondItem="OCx-1F-F8j" secondAttribute="top" constant="10" id="TVU-yc-g3u"/>
+                            <constraint firstAttribute="bottom" secondItem="4Zo-3q-rYJ" secondAttribute="bottom" constant="10" id="Z9G-9y-dCO"/>
+                            <constraint firstAttribute="trailing" secondItem="Qo8-sV-DZm" secondAttribute="trailing" constant="10" id="hPW-1F-DpC"/>
+                            <constraint firstItem="4Sm-di-xBm" firstAttribute="centerY" secondItem="dbq-JD-CIC" secondAttribute="centerY" id="jKd-4F-Gkx"/>
+                            <constraint firstItem="4Zo-3q-rYJ" firstAttribute="top" secondItem="dbq-JD-CIC" secondAttribute="bottom" constant="5" id="jwv-rH-J4R"/>
+                            <constraint firstAttribute="trailing" secondItem="4Zo-3q-rYJ" secondAttribute="trailing" constant="5" id="mz0-IB-4z4"/>
+                            <constraint firstItem="dbq-JD-CIC" firstAttribute="leading" secondItem="yGA-bd-b5S" secondAttribute="trailing" constant="10" id="nZw-EP-zGm"/>
+                            <constraint firstItem="Qo8-sV-DZm" firstAttribute="centerY" secondItem="dbq-JD-CIC" secondAttribute="centerY" id="nug-HI-ZHc"/>
+                            <constraint firstItem="yGA-bd-b5S" firstAttribute="leading" secondItem="OCx-1F-F8j" secondAttribute="leading" constant="20" id="uMl-AY-oFi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OCx-1F-F8j" secondAttribute="trailing" id="7fY-2j-Lua"/>
+                    <constraint firstAttribute="bottom" secondItem="OCx-1F-F8j" secondAttribute="bottom" constant="5" id="Cq6-Gq-CFe"/>
+                    <constraint firstItem="OCx-1F-F8j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="F09-JW-BDm"/>
+                    <constraint firstItem="OCx-1F-F8j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZME-oV-Jjw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="dbq-JD-CIC" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.2" id="LgP-da-5vc"/>
+                <constraint firstItem="4Sm-di-xBm" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.3" id="N3U-wN-566"/>
+                <constraint firstItem="dbq-JD-CIC" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.4" id="hYc-Nt-zNa"/>
+            </constraints>
+            <connections>
+                <outlet property="addressLabel" destination="4Zo-3q-rYJ" id="PFP-TW-kPY"/>
+                <outlet property="backView" destination="OCx-1F-F8j" id="3WF-xg-6Mo"/>
+                <outlet property="nameLabel" destination="dbq-JD-CIC" id="fKP-mv-XTD"/>
+                <outlet property="selectedAddImage" destination="yGA-bd-b5S" id="lIM-TH-mJf"/>
+            </connections>
+            <point key="canvasLocation" x="337.68115942028987" y="69.642857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unselectRB_ic" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

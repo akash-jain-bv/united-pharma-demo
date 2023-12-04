@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="allProdListCell" id="gTV-IL-0wX" customClass="CustomAllProdListCell" customModule="UnitedPharamcy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prod1" translatesAutoresizingMaskIntoConstraints="NO" id="kTh-mj-QqL">
+                        <rect key="frame" x="5" y="5" width="119" height="119"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kTh-mj-QqL" secondAttribute="height" multiplier="1:1" id="20m-Xo-iHq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy 1 get 1 Free" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZt-zD-Db1">
+                        <rect key="frame" x="5" y="124" width="119" height="21"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3VZ-tB-BEe">
+                        <rect key="frame" x="134" y="10" width="30" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="E4i-cY-Um3"/>
+                            <constraint firstAttribute="height" constant="20" id="kdV-zh-nMa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="132.25SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaZ-tk-FTI">
+                        <rect key="frame" x="134" y="45" width="198.5" height="21"/>
+                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio ASM 01 Face &amp; Body Cleanser" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNJ-bB-YEF">
+                        <rect key="frame" x="134" y="71" width="238.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teh-NU-fEy">
+                        <rect key="frame" x="372" y="54.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="S0I-Zl-uew"/>
+                            <constraint firstAttribute="width" constant="20" id="rbT-5y-Hx3"/>
+                        </constraints>
+                        <color key="tintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="suit.heart" catalog="system"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="BZt-zD-Db1" firstAttribute="top" secondItem="kTh-mj-QqL" secondAttribute="bottom" id="3pz-rk-G29"/>
+                <constraint firstItem="BZt-zD-Db1" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.141892" id="4ug-X8-mVD"/>
+                <constraint firstItem="teh-NU-fEy" firstAttribute="centerY" secondItem="kTh-mj-QqL" secondAttribute="centerY" id="91H-mi-5t3"/>
+                <constraint firstItem="BZt-zD-Db1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Abg-25-Oz6"/>
+                <constraint firstItem="BZt-zD-Db1" firstAttribute="trailing" secondItem="kTh-mj-QqL" secondAttribute="trailing" id="B4p-kG-w9p"/>
+                <constraint firstItem="kNJ-bB-YEF" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.6" id="CHK-aB-nTq"/>
+                <constraint firstItem="WaZ-tk-FTI" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.141892" id="I4i-Di-JMg"/>
+                <constraint firstItem="kTh-mj-QqL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="NjS-j6-Arb"/>
+                <constraint firstAttribute="trailing" secondItem="teh-NU-fEy" secondAttribute="trailing" constant="5" id="QcV-n3-dP7"/>
+                <constraint firstItem="WaZ-tk-FTI" firstAttribute="top" secondItem="3VZ-tB-BEe" secondAttribute="bottom" constant="15" id="R5R-DP-upI"/>
+                <constraint firstItem="kNJ-bB-YEF" firstAttribute="top" secondItem="WaZ-tk-FTI" secondAttribute="bottom" constant="5" id="Rh5-Nc-oBW"/>
+                <constraint firstItem="kTh-mj-QqL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Rpn-mG-FSC"/>
+                <constraint firstItem="kNJ-bB-YEF" firstAttribute="leading" secondItem="kTh-mj-QqL" secondAttribute="trailing" constant="10" id="T6Q-LG-Xs7"/>
+                <constraint firstItem="3VZ-tB-BEe" firstAttribute="leading" secondItem="kTh-mj-QqL" secondAttribute="trailing" constant="10" id="VeT-Mz-O2T"/>
+                <constraint firstItem="WaZ-tk-FTI" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.5" id="Z0J-NE-uBS"/>
+                <constraint firstItem="WaZ-tk-FTI" firstAttribute="leading" secondItem="kTh-mj-QqL" secondAttribute="trailing" constant="10" id="e7o-bv-PuG"/>
+                <constraint firstItem="kTh-mj-QqL" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.3" id="eNv-aR-ff0"/>
+                <constraint firstItem="3VZ-tB-BEe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="yez-B9-FR9"/>
+            </constraints>
+            <size key="customSize" width="397" height="148"/>
+            <connections>
+                <outlet property="imageView" destination="kTh-mj-QqL" id="bdi-9C-hlm"/>
+                <outlet property="nameLabel" destination="kNJ-bB-YEF" id="8Et-lx-r5H"/>
+                <outlet property="offerLabel" destination="BZt-zD-Db1" id="I2K-dO-Jkl"/>
+                <outlet property="priceLabel" destination="WaZ-tk-FTI" id="gI8-8j-CWI"/>
+            </connections>
+            <point key="canvasLocation" x="-115.21739130434783" y="63.616071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="prod1" width="225" height="225"/>
+        <image name="suit.heart" catalog="system" width="128" height="109"/>
+    </resources>
+</document>

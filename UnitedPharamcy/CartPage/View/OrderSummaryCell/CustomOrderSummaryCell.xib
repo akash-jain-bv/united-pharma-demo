@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderSummaryCell" rowHeight="170" id="KGk-i7-Jjw" customClass="CustomOrderSummaryCell" customModule="UnitedPharamcy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkg-It-d8h">
+                        <rect key="frame" x="15" y="10" width="110.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="96Q-tV-PHl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDY-zW-1WC">
+                        <rect key="frame" x="15" y="45" width="47.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0vv-z3-iRB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping Charges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOA-rI-ftg">
+                        <rect key="frame" x="15" y="75" width="100.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Qbw-Bl-1zI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2D-9T-kAo">
+                        <rect key="frame" x="15" y="105" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="MQq-gw-eBQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTq-tg-yB6">
+                        <rect key="frame" x="273.5" y="45" width="31.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2kj-p0-3he"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8k-py-oB4">
+                        <rect key="frame" x="273.5" y="75" width="31.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jaa-iN-00q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tn-XL-TD5">
+                        <rect key="frame" x="273.5" y="136" width="31.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="rhP-op-0Pw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0a-ha-1yR">
+                        <rect key="frame" x="16" y="130" width="288" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="IbK-mB-Erg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNv-UQ-cDz">
+                        <rect key="frame" x="15" y="161" width="290" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OLc-fh-mX8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h56-2s-VaX">
+                        <rect key="frame" x="15" y="136" width="29" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="QC0-nx-G59"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.00SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AU-t2-uiA">
+                        <rect key="frame" x="256" y="105" width="49" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="f0j-BV-MbY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eDY-zW-1WC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="25d-r0-sLK"/>
+                    <constraint firstAttribute="trailing" secondItem="7AU-t2-uiA" secondAttribute="trailing" constant="15" id="2cx-sQ-WE3"/>
+                    <constraint firstItem="T0a-ha-1yR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6Nz-LR-EVB"/>
+                    <constraint firstItem="tkg-It-d8h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6ZO-Zj-5EY"/>
+                    <constraint firstItem="7AU-t2-uiA" firstAttribute="centerY" secondItem="C2D-9T-kAo" secondAttribute="centerY" id="7af-Bb-EQc"/>
+                    <constraint firstItem="HNv-UQ-cDz" firstAttribute="top" secondItem="h56-2s-VaX" secondAttribute="bottom" constant="5" id="8ap-fy-nAE"/>
+                    <constraint firstAttribute="trailing" secondItem="c8k-py-oB4" secondAttribute="trailing" constant="15" id="AYd-Em-VIc"/>
+                    <constraint firstAttribute="trailing" secondItem="HNv-UQ-cDz" secondAttribute="trailing" constant="15" id="GDb-PS-VZQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="T0a-ha-1yR" secondAttribute="trailing" id="HQi-Rd-ZAS"/>
+                    <constraint firstAttribute="trailing" secondItem="kTq-tg-yB6" secondAttribute="trailing" constant="15" id="Mtc-Y5-mjF"/>
+                    <constraint firstAttribute="trailing" secondItem="7Tn-XL-TD5" secondAttribute="trailing" constant="15" id="R1O-m4-a2y"/>
+                    <constraint firstItem="h56-2s-VaX" firstAttribute="top" secondItem="T0a-ha-1yR" secondAttribute="bottom" constant="5" id="RA5-A5-dxH"/>
+                    <constraint firstItem="c8k-py-oB4" firstAttribute="centerY" secondItem="tOA-rI-ftg" secondAttribute="centerY" id="Tke-pJ-v4O"/>
+                    <constraint firstItem="c8k-py-oB4" firstAttribute="top" secondItem="kTq-tg-yB6" secondAttribute="bottom" constant="10" id="Vjv-Ow-8ds"/>
+                    <constraint firstItem="eDY-zW-1WC" firstAttribute="top" secondItem="tkg-It-d8h" secondAttribute="bottom" constant="15" id="YT9-GS-0k1"/>
+                    <constraint firstItem="C2D-9T-kAo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ZfR-8t-VcP"/>
+                    <constraint firstItem="7AU-t2-uiA" firstAttribute="top" secondItem="c8k-py-oB4" secondAttribute="bottom" constant="10" id="cPM-yu-oGC"/>
+                    <constraint firstItem="tkg-It-d8h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="coM-Gx-pn9"/>
+                    <constraint firstItem="tOA-rI-ftg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h1G-ZC-VqR"/>
+                    <constraint firstItem="tOA-rI-ftg" firstAttribute="top" secondItem="eDY-zW-1WC" secondAttribute="bottom" constant="10" id="jNf-Lj-HE6"/>
+                    <constraint firstItem="HNv-UQ-cDz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="je7-tR-eEB"/>
+                    <constraint firstItem="7Tn-XL-TD5" firstAttribute="top" secondItem="T0a-ha-1yR" secondAttribute="bottom" constant="5" id="lG5-KS-0hV"/>
+                    <constraint firstItem="C2D-9T-kAo" firstAttribute="top" secondItem="tOA-rI-ftg" secondAttribute="bottom" constant="10" id="nJX-Bf-9p3"/>
+                    <constraint firstItem="kTq-tg-yB6" firstAttribute="centerY" secondItem="eDY-zW-1WC" secondAttribute="centerY" id="oqM-zf-33b"/>
+                    <constraint firstItem="T0a-ha-1yR" firstAttribute="top" secondItem="C2D-9T-kAo" secondAttribute="bottom" constant="5" id="rDr-KJ-4Cb"/>
+                    <constraint firstItem="h56-2s-VaX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="t1t-0L-fNo"/>
+                    <constraint firstItem="7Tn-XL-TD5" firstAttribute="centerY" secondItem="h56-2s-VaX" secondAttribute="centerY" id="tSy-am-0Fy"/>
+                    <constraint firstItem="HNv-UQ-cDz" firstAttribute="top" secondItem="7Tn-XL-TD5" secondAttribute="bottom" constant="5" id="yaF-Ja-d8p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="orderTotalLabel" destination="7Tn-XL-TD5" id="bXM-hs-C95"/>
+                <outlet property="subtotalLabel" destination="kTq-tg-yB6" id="Gdl-cP-QbF"/>
+                <outlet property="taxLabel" destination="c8k-py-oB4" id="Ue6-PC-SKC"/>
+            </connections>
+            <point key="canvasLocation" x="311.59420289855075" y="70.3125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

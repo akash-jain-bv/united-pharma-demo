@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bannerCell" rowHeight="60" id="KGk-i7-Jjw" customClass="CustomBannerCell" customModule="UnitedPharamcy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop_ic" translatesAutoresizingMaskIntoConstraints="NO" id="WMb-wc-36k">
+                        <rect key="frame" x="5" y="5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="4HJ-ne-shq"/>
+                            <constraint firstAttribute="height" constant="30" id="bpL-8q-tdF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Care" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huY-dU-HUo">
+                        <rect key="frame" x="45" y="5" width="91" height="30"/>
+                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLm-om-Cj0">
+                        <rect key="frame" x="355" y="12.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="1NQ-o0-nRy"/>
+                            <constraint firstAttribute="height" constant="15" id="Edc-OO-L6C"/>
+                        </constraints>
+                        <state key="normal" image="arrow-ios-down-outline"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="huY-dU-HUo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="917-8e-Kdp"/>
+                    <constraint firstAttribute="trailing" secondItem="pLm-om-Cj0" secondAttribute="trailing" constant="10" id="Glk-eo-GC2"/>
+                    <constraint firstItem="WMb-wc-36k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="SLt-dE-aIb"/>
+                    <constraint firstItem="huY-dU-HUo" firstAttribute="leading" secondItem="WMb-wc-36k" secondAttribute="trailing" constant="10" id="TJ1-ND-tQo"/>
+                    <constraint firstItem="pLm-om-Cj0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vwd-Yg-cFn"/>
+                    <constraint firstAttribute="bottom" secondItem="huY-dU-HUo" secondAttribute="bottom" constant="5" id="sFx-A4-nFJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="WMb-wc-36k" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="GC9-ik-kJf"/>
+            </constraints>
+            <connections>
+                <outlet property="dropDownButton" destination="pLm-om-Cj0" id="hBZ-Wf-KzS"/>
+                <outlet property="iconImage" destination="WMb-wc-36k" id="TyU-Ws-6jq"/>
+                <outlet property="labelTitle" destination="huY-dU-HUo" id="5qA-Og-ncK"/>
+            </connections>
+            <point key="canvasLocation" x="-30.434782608695656" y="25.446428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-ios-down-outline" width="10" height="5"/>
+        <image name="drop_ic" width="60" height="59"/>
+    </resources>
+</document>

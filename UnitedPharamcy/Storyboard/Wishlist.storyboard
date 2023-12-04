@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9w-Y5-5FR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Wishlist View Controller-->
+        <scene sceneID="qzM-wz-cLX">
+            <objects>
+                <viewController storyboardIdentifier="WishlistViewController" id="Qdt-fH-fQB" customClass="WishlistViewController" customModule="UnitedPharamcy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dD9-a9-njd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7L6-QE-FCe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="710.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uCu-wK-HaD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="osm-Md-uT4">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VVc-ha-V6K">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZj-WS-2va">
+                                <rect key="frame" x="10" y="715.5" width="190.5" height="48.5"/>
+                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17"/>
+                                <state key="normal" title="Update Wishlist">
+                                    <color key="titleColor" red="0.093311868610000001" green="0.073503367599999994" blue="0.37136077880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhF-Em-zXf">
+                                <rect key="frame" x="213.5" y="715.5" width="190.5" height="48.5"/>
+                                <color key="backgroundColor" red="0.093311868610000001" green="0.073503367599999994" blue="0.37136077880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17"/>
+                                <state key="normal" title="Add All To Cart">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LCD-kb-sC4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LCD-kb-sC4" firstAttribute="bottom" secondItem="JhF-Em-zXf" secondAttribute="bottom" constant="10" id="0kH-tk-r5b"/>
+                            <constraint firstItem="LCD-kb-sC4" firstAttribute="bottom" secondItem="vZj-WS-2va" secondAttribute="bottom" constant="10" id="2Eo-Kp-cNv"/>
+                            <constraint firstItem="JhF-Em-zXf" firstAttribute="width" secondItem="dD9-a9-njd" secondAttribute="width" multiplier="0.46" id="FDb-bH-VoH"/>
+                            <constraint firstItem="LCD-kb-sC4" firstAttribute="trailing" secondItem="JhF-Em-zXf" secondAttribute="trailing" constant="10" id="OVa-Cb-95a"/>
+                            <constraint firstItem="JhF-Em-zXf" firstAttribute="height" secondItem="dD9-a9-njd" secondAttribute="height" multiplier="0.06" id="Qfg-W1-FuR"/>
+                            <constraint firstItem="vZj-WS-2va" firstAttribute="leading" secondItem="LCD-kb-sC4" secondAttribute="leading" constant="10" id="SRF-kT-jCy"/>
+                            <constraint firstItem="LCD-kb-sC4" firstAttribute="trailing" secondItem="7L6-QE-FCe" secondAttribute="trailing" id="XVK-gC-cw1"/>
+                            <constraint firstItem="7L6-QE-FCe" firstAttribute="leading" secondItem="LCD-kb-sC4" secondAttribute="leading" id="hFR-Fh-bMt"/>
+                            <constraint firstItem="vZj-WS-2va" firstAttribute="top" secondItem="7L6-QE-FCe" secondAttribute="bottom" constant="5" id="iWp-AC-Rxj"/>
+                            <constraint firstItem="JhF-Em-zXf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vZj-WS-2va" secondAttribute="trailing" constant="8" symbolic="YES" id="m8a-73-bHT"/>
+                            <constraint firstItem="7L6-QE-FCe" firstAttribute="top" secondItem="LCD-kb-sC4" secondAttribute="top" id="qsh-XR-Pwb"/>
+                            <constraint firstItem="vZj-WS-2va" firstAttribute="height" secondItem="dD9-a9-njd" secondAttribute="height" multiplier="0.06" id="rxh-UQ-r8Z"/>
+                            <constraint firstItem="vZj-WS-2va" firstAttribute="width" secondItem="dD9-a9-njd" secondAttribute="width" multiplier="0.46" id="y2A-tr-bWS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nfT-ZI-nlK">
+                        <leftBarButtonItems>
+                            <barButtonItem image="menu-outline" id="DJ0-GW-jOT">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sideMenuButton" destination="Qdt-fH-fQB" id="g7E-xX-azt"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="wuf-y7-k8Q">
+                                <view key="customView" contentMode="scaleToFill" id="eIP-Ne-TCo">
+                                    <rect key="frame" x="64.5" y="5.5" width="92" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wishlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBs-nF-WX3">
+                                            <rect key="frame" x="0.0" y="0.0" width="92" height="33"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="HBs-nF-WX3" firstAttribute="top" secondItem="eIP-Ne-TCo" secondAttribute="top" id="Coh-Ct-upq"/>
+                                        <constraint firstItem="HBs-nF-WX3" firstAttribute="leading" secondItem="eIP-Ne-TCo" secondAttribute="leading" id="FV7-Dy-7qJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="HBs-nF-WX3" secondAttribute="bottom" id="p69-DF-ZCc"/>
+                                        <constraint firstAttribute="trailing" secondItem="HBs-nF-WX3" secondAttribute="trailing" id="xXv-Lv-kAh"/>
+                                    </constraints>
+                                </view>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem image="shopping-cart-solid-badged-1" id="NOE-gj-VXb">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="cartPage:" destination="Qdt-fH-fQB" id="ut0-9b-fHA"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="notification-outline-badged" id="7V7-jr-1zG">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addAllToCart" destination="JhF-Em-zXf" id="dEU-a9-0VP"/>
+                        <outlet property="updateWishlist" destination="vZj-WS-2va" id="wWN-yg-WTH"/>
+                        <outlet property="wishlistCollectionView" destination="7L6-QE-FCe" id="FGc-U2-uOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uO6-iy-GCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4578" y="-2393"/>
+        </scene>
+        <!--Wishlist-->
+        <scene sceneID="CTd-b1-qOC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X9w-Y5-5FR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wishlist" image="heart" id="4By-oA-BjT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="a8o-A1-4mU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.039215686270000001" green="0.098039215690000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qdt-fH-fQB" kind="relationship" relationship="rootViewController" id="d3I-Bx-uLi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhd-QY-S9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3713" y="-2393"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="25" height="22"/>
+        <image name="menu-outline" width="25.5" height="14.5"/>
+        <image name="notification-outline-badged" width="26" height="27"/>
+        <image name="shopping-cart-solid-badged-1" width="27.5" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+PODS:
+  - CHIPageControl (0.1.8):
+    - CHIPageControl/Aji (= 0.1.8)
+    - CHIPageControl/Aleppo (= 0.1.8)
+    - CHIPageControl/Chimayo (= 0.1.8)
+    - CHIPageControl/Fresno (= 0.1.8)
+    - CHIPageControl/Jalapeno (= 0.1.8)
+    - CHIPageControl/Jaloro (= 0.1.8)
+    - CHIPageControl/Paprika (= 0.1.8)
+    - CHIPageControl/Puya (= 0.1.8)
+  - CHIPageControl/Aji (0.1.8)
+  - CHIPageControl/Aleppo (0.1.8)
+  - CHIPageControl/Chimayo (0.1.8)
+  - CHIPageControl/Fresno (0.1.8)
+  - CHIPageControl/Jalapeno (0.1.8)
+  - CHIPageControl/Jaloro (0.1.8)
+  - CHIPageControl/Paprika (0.1.8)
+  - CHIPageControl/Puya (0.1.8)
+  - CountryPickerView (3.3.0)
+  - GoogleMaps (7.1.0):
+    - GoogleMaps/Maps (= 7.1.0)
+  - GoogleMaps/Base (7.1.0)
+  - GoogleMaps/Maps (7.1.0):
+    - GoogleMaps/Base
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SideMenu (6.5.0)
+  - SkyFloatingLabelTextField (3.8.0)
+
+DEPENDENCIES:
+  - CHIPageControl (~> 0.1.3)
+  - CountryPickerView
+  - GoogleMaps (= 7.1.0)
+  - NVActivityIndicatorView
+  - SideMenu
+  - SkyFloatingLabelTextField (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - CHIPageControl
+    - CountryPickerView
+    - GoogleMaps
+    - NVActivityIndicatorView
+    - SideMenu
+    - SkyFloatingLabelTextField
+
+SPEC CHECKSUMS:
+  CHIPageControl: 76b35c8309d8dd155e869c109cc6ffc0aaa465ff
+  CountryPickerView: 6322ada32a80b0cd721b0267282a5c24f406f263
+  GoogleMaps: bc56ffb0324e345a2d91bac1a64a920f9c8f1b20
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+
+PODFILE CHECKSUM: 38b80c64b00e0bd210bf114d7f5b15b3573a26ce
+
+COCOAPODS: 1.13.0

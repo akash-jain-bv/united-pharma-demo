@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dropDownCell" rowHeight="50" id="KGk-i7-Jjw" customClass="CustomDropDownCell" customModule="UnitedPharamcy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prescription Dispensing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFN-8O-kaC">
+                        <rect key="frame" x="5" y="0.0" width="217" height="50"/>
+                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="14"/>
+                        <color key="textColor" red="0.039215686274509803" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8me-9b-B90">
+                        <rect key="frame" x="222" y="19.5" width="22" height="11.5"/>
+                        <color key="tintColor" red="0.039215686274509803" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8me-9b-B90" firstAttribute="leading" secondItem="QFN-8O-kaC" secondAttribute="trailing" id="1hg-1G-vSg"/>
+                    <constraint firstItem="QFN-8O-kaC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="H5E-nf-Miw"/>
+                    <constraint firstItem="QFN-8O-kaC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Yeg-8T-1bs"/>
+                    <constraint firstAttribute="bottom" secondItem="QFN-8O-kaC" secondAttribute="bottom" id="n2m-jn-A2r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="8me-9b-B90" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.3" id="19t-pw-eaW"/>
+                <constraint firstItem="8me-9b-B90" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="Goy-ra-Xl8"/>
+                <constraint firstItem="8me-9b-B90" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.0849421" id="qUE-Vn-sbN"/>
+                <constraint firstItem="8me-9b-B90" firstAttribute="centerX" secondItem="njF-e1-oar" secondAttribute="centerX" multiplier="1.8" id="vJi-3s-VjK"/>
+            </constraints>
+            <connections>
+                <outlet property="descriptionLabel" destination="QFN-8O-kaC" id="L3e-Ci-AwU"/>
+            </connections>
+            <point key="canvasLocation" x="161.59420289855075" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

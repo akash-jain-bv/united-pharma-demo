@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="prescriptionCell" rowHeight="130" id="KGk-i7-Jjw" customClass="CustomPrescriptionCell" customModule="UnitedPharamcy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="57f-H3-OBW">
+                        <rect key="frame" x="15" y="10" width="366" height="105"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHR-9E-zKU">
+                                <rect key="frame" x="0.0" y="0.0" width="104" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 9970" translatesAutoresizingMaskIntoConstraints="NO" id="JGv-Hc-BNQ">
+                                        <rect key="frame" x="21" y="5.5" width="62" height="63"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prescription Dispensing" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-dS-1vB">
+                                        <rect key="frame" x="5" y="58" width="94" height="36.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.039215686274509803" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JGv-Hc-BNQ" firstAttribute="height" secondItem="fHR-9E-zKU" secondAttribute="height" multiplier="0.6" id="BcE-m7-d9a"/>
+                                    <constraint firstItem="JGv-Hc-BNQ" firstAttribute="centerY" secondItem="fHR-9E-zKU" secondAttribute="centerY" multiplier="0.7" id="DRz-z7-FIN"/>
+                                    <constraint firstItem="n4n-dS-1vB" firstAttribute="centerY" secondItem="fHR-9E-zKU" secondAttribute="centerY" multiplier="1.45" id="Dk6-c3-o0Y"/>
+                                    <constraint firstItem="n4n-dS-1vB" firstAttribute="centerX" secondItem="fHR-9E-zKU" secondAttribute="centerX" id="LV8-xI-WuL"/>
+                                    <constraint firstItem="JGv-Hc-BNQ" firstAttribute="width" secondItem="fHR-9E-zKU" secondAttribute="width" multiplier="0.6" id="RdU-s7-loE"/>
+                                    <constraint firstItem="JGv-Hc-BNQ" firstAttribute="centerX" secondItem="fHR-9E-zKU" secondAttribute="centerX" id="Rlu-Q7-tUa"/>
+                                    <constraint firstItem="n4n-dS-1vB" firstAttribute="width" secondItem="fHR-9E-zKU" secondAttribute="width" multiplier="0.9" id="Z44-Dw-BBc"/>
+                                    <constraint firstItem="n4n-dS-1vB" firstAttribute="height" secondItem="fHR-9E-zKU" secondAttribute="height" multiplier="0.35" id="e9R-2t-2pK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSM-Ga-bbp">
+                                <rect key="frame" x="131" y="0.0" width="104" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 9971" translatesAutoresizingMaskIntoConstraints="NO" id="b1s-1u-5ha">
+                                        <rect key="frame" x="21" y="8" width="62" height="57.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exclusive offers!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3R-hB-wFv">
+                                        <rect key="frame" x="10.5" y="58" width="83" height="36.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.039215686274509803" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="J3R-hB-wFv" firstAttribute="height" secondItem="fSM-Ga-bbp" secondAttribute="height" multiplier="0.35" id="AUB-Og-BKL"/>
+                                    <constraint firstItem="b1s-1u-5ha" firstAttribute="width" secondItem="fSM-Ga-bbp" secondAttribute="width" multiplier="0.6" id="BcL-3d-uVW"/>
+                                    <constraint firstItem="J3R-hB-wFv" firstAttribute="width" secondItem="fSM-Ga-bbp" secondAttribute="width" multiplier="0.8" id="DLY-R7-uiP"/>
+                                    <constraint firstItem="J3R-hB-wFv" firstAttribute="centerY" secondItem="fSM-Ga-bbp" secondAttribute="centerY" multiplier="1.45" id="IVT-5t-gxL"/>
+                                    <constraint firstItem="J3R-hB-wFv" firstAttribute="centerX" secondItem="fSM-Ga-bbp" secondAttribute="centerX" id="OTN-s9-fjt"/>
+                                    <constraint firstItem="b1s-1u-5ha" firstAttribute="height" secondItem="fSM-Ga-bbp" secondAttribute="height" multiplier="0.55" id="ZYb-we-KTE"/>
+                                    <constraint firstItem="b1s-1u-5ha" firstAttribute="centerY" secondItem="fSM-Ga-bbp" secondAttribute="centerY" multiplier="0.7" id="nEK-JR-VmC"/>
+                                    <constraint firstItem="b1s-1u-5ha" firstAttribute="centerX" secondItem="fSM-Ga-bbp" secondAttribute="centerX" id="wUA-7N-d39"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOP-yp-2zA">
+                                <rect key="frame" x="262" y="0.0" width="104" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 9972" translatesAutoresizingMaskIntoConstraints="NO" id="q2a-FE-pFg">
+                                        <rect key="frame" x="21" y="0.0" width="62" height="63"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop offers Magazine" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLQ-Zq-InE">
+                                        <rect key="frame" x="10.5" y="58" width="83" height="36.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.039215686274509803" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q2a-FE-pFg" firstAttribute="width" secondItem="cOP-yp-2zA" secondAttribute="width" multiplier="0.6" id="6Dw-qD-YoY"/>
+                                    <constraint firstItem="cLQ-Zq-InE" firstAttribute="centerX" secondItem="cOP-yp-2zA" secondAttribute="centerX" id="6Yb-Gb-O0A"/>
+                                    <constraint firstItem="q2a-FE-pFg" firstAttribute="centerX" secondItem="cOP-yp-2zA" secondAttribute="centerX" id="COO-WT-vDI"/>
+                                    <constraint firstItem="cLQ-Zq-InE" firstAttribute="height" secondItem="cOP-yp-2zA" secondAttribute="height" multiplier="0.35" id="Eqn-p7-FhI"/>
+                                    <constraint firstItem="cLQ-Zq-InE" firstAttribute="width" secondItem="cOP-yp-2zA" secondAttribute="width" multiplier="0.8" id="Uzo-HO-GiQ"/>
+                                    <constraint firstItem="cLQ-Zq-InE" firstAttribute="centerY" secondItem="cOP-yp-2zA" secondAttribute="centerY" multiplier="1.45" id="Zed-pM-0Bt"/>
+                                    <constraint firstItem="q2a-FE-pFg" firstAttribute="centerY" secondItem="cOP-yp-2zA" secondAttribute="centerY" multiplier="0.6" id="hSe-eU-PvA"/>
+                                    <constraint firstItem="q2a-FE-pFg" firstAttribute="height" secondItem="cOP-yp-2zA" secondAttribute="height" multiplier="0.6" id="qyR-WB-yBj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="57f-H3-OBW" secondAttribute="trailing" constant="15" id="Va4-mI-z7V"/>
+                    <constraint firstAttribute="bottom" secondItem="57f-H3-OBW" secondAttribute="bottom" constant="10" id="ies-NH-aMq"/>
+                    <constraint firstItem="57f-H3-OBW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="tPv-cs-Jc5"/>
+                    <constraint firstItem="57f-H3-OBW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tfF-ue-Efh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="magazineView" destination="cOP-yp-2zA" id="0a1-Ne-lZD"/>
+                <outlet property="offerView" destination="fSM-Ga-bbp" id="1eK-uS-KXI"/>
+                <outlet property="prescriptionView" destination="fHR-9E-zKU" id="gMO-wu-dxv"/>
+            </connections>
+            <point key="canvasLocation" x="153.62318840579712" y="88.727678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 9970" width="116" height="84.5"/>
+        <image name="Group 9971" width="116" height="84.5"/>
+        <image name="Group 9972" width="116" height="84.5"/>
+    </resources>
+</document>
